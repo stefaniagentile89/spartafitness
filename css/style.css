@@ -5,15 +5,25 @@
 }
 /**font-family: 'Rubik Distressed', cursive;
 font-family: 'Raleway', sans-serif;**/
-
+body{
+    background-color: #010101;
+}
 header{
-    flex-wrap: wrap;
     background-image: linear-gradient(to right top, #383940, #2c2c31, #202023, #141415, #010101);
     color: whitesmoke;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    height: 75px;
+    height: 30%;
     align-items: stretch;
+    border-radius: 20px;
+}
+header nav a:hover{
+    text-shadow: 0.1em 0.1em  crimson;
+    padding: 10px;
+}
+header nav div ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 li{
     list-style-type: none;
@@ -41,7 +51,6 @@ h1{
     font-weight: 900;
     gap: 40px;
     text-align: center;
-
 }
 h2{
     text-align: center;
@@ -51,15 +60,19 @@ h2{
 }
 .contactowhatsapp{
     position: fixed;
-    top: 11%;
+    top: 15%;
     right: 2%;
+}
+.contactowhatsapp a :hover{
+    transform: scale(1.2);
 }
 .challenge{
     font-family: 'Rubik Distressed', cursive;
     font-size: 70px;
-    font-weight: 700;
-    text-align: right;
-    margin-top: 100px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    text-align: end;
 }
 .mainIndex{
     background-image: url(../images/prueba.gif);
@@ -70,8 +83,17 @@ h2{
     color: whitesmoke;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    flex-wrap: wrap;
     padding: 20px;
+    overflow:auto;
+    border-radius: 20px;
+}
+.mainIndex .contactowhatsapp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainIndex .menu ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 .mainSedes{
     background-image: url(../images/imagen-sedes.jpg);
@@ -80,8 +102,9 @@ h2{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-wrap: wrap;
-    padding: 40px;
+    padding: 10px;
+    overflow:auto;
+    border-radius: 20px;
 }
 .mainInscripcion{
     background-image: url(../images/imagen-formulario.jpg);
@@ -92,21 +115,34 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     color: whitesmoke;
-    flex-wrap: wrap;
     padding: 10px;
+    overflow: auto;
+    border-radius: 20px;
 }
 footer{
     background-color: #010101;
+    background-position: bottom;
     color: whitesmoke;
     font-family: 'Raleway', sans-serif;
-    height: 70px;
+    height: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
 }
-.formulario, .menu{
+.formulario{
+    line-height: 1;
+}
+.menu ul{
     line-height: 3;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 30px;
+    font-weight: 200;
+}
+.menu ul li a :hover{
+    color:crimson
 }
 input{
     border-radius: 20px;
@@ -114,22 +150,28 @@ input{
     font-size: 20px;
     font-weight: 200;
     color:#383940;
+    display: flex;
+    flex-wrap: wrap;
 }
 .mapas{
     display: flex;
-    justify-content: space-around;;
+    justify-content: space-around;
     gap: 40px;
     margin: 20px;
+    flex-wrap: wrap;
 }
 .sedes p{
     font-size: 25px;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 .horarios{
     display: flex;
-justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .menu{
-    font-weight:  400px;;
+    font-weight:  400px;
 }
 .redes{
     display: flex;
@@ -140,4 +182,36 @@ justify-content: flex-end;
     font-size: 30px;
     padding: 30px;
 }
-
+footer :hover{
+    transform: scale(1.1);
+}
+.mainActividades{
+    background-image: url(../images/actividades.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.mainPreguntas{
+    background-image: url(../images/preguntas.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.mainPromos{
+    background-image: linear-gradient(to right bottom, #353539, #57565a, #7a7a7d, #a0a0a2, #c8c8c9, #d0cdd9, #dcd0e8, #ecd2f3, #edacda, #f183b2, #ef567d, #e0273f);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
