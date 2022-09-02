@@ -18,7 +18,7 @@ header{
     border-radius: 20px;
 }
 header nav a:hover{
-    text-shadow: 0.1em 0.1em  crimson;
+    text-shadow: 0.1em 0.1em 0.2em crimson;
     padding: 10px;
 }
 header nav div ul{
@@ -56,7 +56,7 @@ h2{
     text-align: center;
     font-size: 40px;
     font-weight: 700;
-    padding: 10px;
+    padding: 20px;
 }
 .contactowhatsapp{
     position: fixed;
@@ -119,6 +119,31 @@ h2{
     overflow: auto;
     border-radius: 20px;
 }
+.mainActividades{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: stretch;
+    border-radius: 20px;
+}
+.mainActividades ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.mainActividades ul :hover{
+    text-shadow: -3px -3px 3px rgb(36, 243, 226);
+}
+.mainActividades ul li{
+    padding: 10px 75px 10px 75px;
+}
+.mainActividades ul li a{
+    padding: 10px;
+    margin: top;
+    position: fixed;
+}
 footer{
     background-color: #010101;
     background-position: bottom;
@@ -165,10 +190,16 @@ input{
     min-height: fit-content;
     min-width: fit-content;
 }
+.sedes :hover{
+    box-shadow: 20px 20px 20px 20px grey;
+}
 .horarios{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+}
+.horarios :hover{
+    text-decoration:underline
 }
 .menu{
     font-weight:  400px;
@@ -188,11 +219,10 @@ footer :hover{
 .mainActividades{
     background-image: url(../images/actividades.jpg);
     width: 100%;
-    height: 100vh;
+    height: 980px;
     background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    flex-wrap: wrap;
+    background-size: cover;
+    padding: 10px;
     border-radius: 20px;
 }
 .mainPreguntas{
@@ -204,14 +234,49 @@ footer :hover{
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color:#2c2c31;
+    overflow: auto;
 }
 .mainPromos{
-    background-image: linear-gradient(to right bottom, #353539, #57565a, #7a7a7d, #a0a0a2, #c8c8c9, #d0cdd9, #dcd0e8, #ecd2f3, #edacda, #f183b2, #ef567d, #e0273f);
+    background-image: url(../images/promos.jpg);
     width: 100%;
-    height: 100vh;
+    height: 900px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
+    color: azure;
+    justify-content:stretch;
+    overflow: auto;
+}
+button{
+    background-color:#2c2c31;
+    border-radius: 20px 10px 20px 10px;
+}
+.mainPromos ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+    justify-content:center;
+}
+.mainPromos ul li{
+width: 400px;
+height: 300px;
+background-image: linear-gradient(to right bottom, #d414d4, #d72ab3, #d14099, #c45286, #b2627a, #a06271, #8e616a, #7b6064, #695356, #584749, #473b3c, #372f30);
+border-radius: 90px 90px 90px 90px;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mainPromos ul :hover{
+    scale: 1.1;
 }
